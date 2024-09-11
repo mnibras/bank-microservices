@@ -48,9 +48,7 @@ public class AccountController {
             @ApiResponse(
                     responseCode = "500",
                     description = "HTTP Status Internal Server Error",
-                    content = @Content(
-                            schema = @Schema(implementation = ErrorResponseDto.class)
-                    )
+                    content = @Content(schema = @Schema(implementation = ErrorResponseDto.class))
             )
     }
     )
@@ -74,9 +72,7 @@ public class AccountController {
             @ApiResponse(
                     responseCode = "500",
                     description = "HTTP Status Internal Server Error",
-                    content = @Content(
-                            schema = @Schema(implementation = ErrorResponseDto.class)
-                    )
+                    content = @Content(schema = @Schema(implementation = ErrorResponseDto.class))
             )
     }
     )
@@ -104,9 +100,7 @@ public class AccountController {
             @ApiResponse(
                     responseCode = "500",
                     description = "HTTP Status Internal Server Error",
-                    content = @Content(
-                            schema = @Schema(implementation = ErrorResponseDto.class)
-                    )
+                    content = @Content(schema = @Schema(implementation = ErrorResponseDto.class))
             )
     }
     )
@@ -161,6 +155,5 @@ public class AccountController {
                     .body(new ResponseDto(AccountConstants.STATUS_417, AccountConstants.MESSAGE_417_DELETE));
         }
     }
-
 
 }
